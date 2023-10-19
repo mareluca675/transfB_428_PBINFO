@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+    
+{
+    int i, a, n, nr = 0, k;
+    
+    cin >> k >> n;
+    
+    i = n - 1;
+    
+    while(i >= 0)
+    {
+        cin >> a;
+        nr = nr + a * pow(k, i);
+        i --;
+    }
+    
+    cout << nr;
+}
